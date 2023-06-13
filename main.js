@@ -11,34 +11,37 @@ submit.onclick = () => {
   let numVal = num.value;
   let sys = system.value.toUpperCase();
   if (sys == "B") {
-    const conversions = convertBinary(numVal);
+    let conversions = convertBinary(numVal);
     setVales(
       numVal,
       conversions.octal,
       conversions.decimal,
       conversions.hexadecimal
     );
-    // console.log(conversions.octal);
-    // console.log(conversions.decimal);
-    // console.log(conversions.hexadecimal);
   } else if (sys == "O") {
     const conversions = convertOctal(numVal);
-
-    console.log(conversions.binary);
-    console.log(conversions.decimal);
-    console.log(conversions.hexadecimal);
+    setVales(
+      conversions.binary,
+      numVal,
+      conversions.decimal,
+      conversions.hexadecimal
+    );
   } else if (sys == "D") {
-    const conversions = convertDecimal(numVal);
-
-    console.log(conversions.binary);
-    console.log(conversions.octal);
-    console.log(conversions.hexadecimal);
+    const conversions = convertDecimal(parseInt(numVal, 10));
+    setVales(
+      conversions.binary,
+      conversions.octal,
+      numVal,
+      conversions.hexadecimal
+    );
   } else if (sys == "H") {
     const conversions = convertHexadecimal(numVal);
-
-    console.log(conversions.binary);
-    console.log(conversions.octal);
-    console.log(conversions.decimal);
+    setVales(
+      conversions.binary,
+      conversions.octal,
+      conversions.decimal,
+      numVal
+    );
   }
 };
 
