@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Maths Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1 style="padding:2rem;"><center>Number System Convertor</center></h1>
-        <div>
-            <span>Enter the number:</span> 
-            <input type="text" placeholder="eg. 1101101" id="number" autocomplete="off" >
-        </div>
-        <div>
-            <span>Enter the Number System:</span>
-            <input type="text" placeholder="eg. B" id="system" autocomplete="off" >
-        </div>
-        <button id="submit">Submit</button>
-    
-        <table border="1" font-size=5rem>
-            <tr>
-                <th>Number System</th>
-                <th style="width: 70%">Value</th>
-            </tr>
-            <tr>
-                <td>Binary</td>
-                <td id="b"></td>
-            </tr>
-            <tr>
-                <td>Octal</td>
-                <td id="o"></td>
-            </tr>
-            <tr>
-                <td>Decimal</td>
-                <td id="d"></td>
-            </tr>
-            <tr>
-                <td>Hexadecimal</td>
-                <td id="h"></td>
-            </tr>
-        </table>
+      <h1 style="padding: 2rem"><center>Number System Convertor</center></h1>
+      <div>
+        <span>Enter the number:</span>
+        <input
+          type="text"
+          placeholder="eg. 1101101"
+          id="number"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <span>Enter the Number System:</span>
+        <input type="text" placeholder="eg. B" id="system" autocomplete="off" />
+      </div>
+      <button id="submit">Submit</button>
+
+      <table border="1" font-size="5rem">
+        <tr>
+          <th>Number System</th>
+          <th style="width: 70%">Value</th>
+        </tr>
+        <tr>
+          <td>Binary</td>
+          <td id="b"></td>
+        </tr>
+        <tr>
+          <td>Octal</td>
+          <td id="o"></td>
+        </tr>
+        <tr>
+          <td>Decimal</td>
+          <td id="d"></td>
+        </tr>
+        <tr>
+          <td>Hexadecimal</td>
+          <td id="h"></td>
+        </tr>
+      </table>
     </div>
     <script src="main.js"></script>
-</body>
+
+    <footer><center>Made by Amos Dsouza.</center></footer>
+  </body>
 </html>
